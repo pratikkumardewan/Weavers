@@ -1,0 +1,28 @@
+# Dependencies (NEVER upload these!)
+node_modules/
+/client/node_modules/
+/server/node_modules/
+
+# Environment variables (Security!)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+**/.env
+
+# Build outputs (Generated automatically, don't upload)
+/client/build/
+/client/dist/
+/server/dist/
+
+# Logs (Just clutter)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS generated files (Clutter)
+.DS_Store
+Thumbs.db

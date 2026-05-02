@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #d1d5db;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 50px 100px;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-card {
+    background-color: #f0fdfa;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-card h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1f2937;
+    letter-spacing: 2px;
+}
+
+.todoHeader {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.todoHeader input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 50px 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.todoHeader #btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-color: #111827;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    line-height: 1;
+}
+
+.inputBox {
+    width: 100%;
+    height: 450px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outputBox {
+    width: 100%;
+    flex: 1;               
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height:500px;
+}
+
+.outputBox::-webkit-scrollbar {
+    display: none;
+}
+
+.todoItem {
+    background-color: #f0fdfa;
+    width: 100%;
+    width: 380px;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.todoName {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    color: #1f2937;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 15px;
+}
+
+
+.todoName.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.deleteBtn, .toggleBtn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+
+.toggleBtn {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>');
+}
+
+.deleteBtn {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>');
+}
+
+.toggleBtn:hover, .deleteBtn:hover {
+    background-color: #d1d5db;
+}
