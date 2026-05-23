@@ -1,1 +1,0 @@
-todays class recording link : https://www.awesomescreenshot.com/video/52364818?key=81f5358dbed7c5839603a8c33bc07302

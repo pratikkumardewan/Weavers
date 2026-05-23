@@ -9,7 +9,7 @@ export const createTodo = async (req, res) => {
             userId: req.userId,
         });
 
-        console.log(createTodo.userId)
+        // console.log(createTodo.userId)
 
         return res.status(201).json({
             success: true,
@@ -77,6 +77,7 @@ export const updateTodo = async (req, res) =>{
     try{
         const {title} = req.body
         const todoId = req.params.id
+
         const editTodo = await todoSchema.findOne({
             _id:todoId,
             userId: req.userId
@@ -90,7 +91,7 @@ export const updateTodo = async (req, res) =>{
         }
 
         editTodo.title = title
-        editTodo.save()
+        await editTodo.save()
         
         return res.status(200).json({
             success:true,
