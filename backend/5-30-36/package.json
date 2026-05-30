@@ -1,7 +1,7 @@
 {
   "name": "cls4-reg",
   "version": "1.0.0",
-  "description": "",
+  "description": "Todays class link:",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.4.1",
+    "multer": "^2.1.1",
     "nodemailer": "^8.0.5",
     "nodemon": "^3.1.14",
     "yup": "^1.7.1"
