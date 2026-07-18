@@ -25,7 +25,7 @@ const CounterApp1 = () => {
     <div className="flex flex-col items-center justify-center border border-gray-400 p-5 gap-5 bg-black text-white ">
       <h1 className="text-2xl font-bold">Counter App</h1>
 
-      <p className=''>{count}</p>
+      <p className={getCountColor()}>{count}</p>
       
       <div className="flex gap-4">
         <button
